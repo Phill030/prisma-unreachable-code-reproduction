@@ -7,7 +7,7 @@ authors = ["Phill030"]
 [dependencies]
 env_logger = "0.10.0"
 log = "0.4.20"
-prisma-client-rust = { git = "https://github.com/Brendonovich/prisma-client-rust", tag = "0.6.8", default-features = false, features = [
+prisma-client-rust = { git = "https://github.com/Brendonovich/prisma-client-rust", tag = "0.6.9", default-features = false, features = [
     "mongodb",
 ] }
 serde = { version = "1.0.188", features = ["derive"] }

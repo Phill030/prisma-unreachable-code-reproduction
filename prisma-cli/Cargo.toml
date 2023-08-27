@@ -8,6 +8,6 @@ authors = ["Phill030"]
 mongodb = ["prisma-client-rust-cli/mongodb"]
 
 [dependencies]
-prisma-client-rust-cli = { git = "https://github.com/Brendonovich/prisma-client-rust", tag = "0.6.8", default-features = false, features = [
+prisma-client-rust-cli = { git = "https://github.com/Brendonovich/prisma-client-rust", tag = "0.6.9", default-features = false, features = [
     "mongodb",
 ] }
