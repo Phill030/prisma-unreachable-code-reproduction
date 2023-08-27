@@ -1,0 +1,20 @@
+generator client {
+    // Corresponds to the cargo alias created earlier
+    provider = "cargo prisma"
+    // The location to generate the client. Is relative to the position of the schema
+    output   = "../repro/src/prisma.rs"
+}
+
+datasource db {
+    provider = "mongodb"
+    url      = env("DATABASE_URL")
+}
+
+model Clients {
+    id               String @id @default(auto()) @map("_id") @db.ObjectId
+    hwid             String @unique
+    token            String
+    name             String
+    first_connection BigInt
+    last_connection  BigInt
+}
